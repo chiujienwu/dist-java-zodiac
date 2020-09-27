@@ -53,14 +53,8 @@ public class RandomHoroscopeService implements HoroscopeService {
     @Autowired
     private FortuneRepository fortuneRepository;
 
-    @PostConstruct
+    @PostConstruct  // runs after all dependencies are loaded
     public void initHoroscopes() {
-
-//        public List<Fortune> getFortune() {
-//            List<Fortune> list = new ArrayList<>();
-//            fortuneRepository.findAll().forEach(list::add);
-//            return list;
-//        }
 
         List<Fortune> fortuneList = new ArrayList<>();
         fortuneRepository.findAll().forEach(fortuneList::add);
