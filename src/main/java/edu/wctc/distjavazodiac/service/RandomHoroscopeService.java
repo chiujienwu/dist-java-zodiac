@@ -62,9 +62,9 @@ public class RandomHoroscopeService implements HoroscopeService {
 //            return list;
 //        }
 
-        List<Fortune> list = new ArrayList<>();
-        fortuneRepository.findAll().forEach(list::add);
-        allFortunes = list;
+        List<Fortune> fortuneList = new ArrayList<>();
+        fortuneRepository.findAll().forEach(fortuneList::add);
+        allFortunes = fortuneList;
 
 //        ObjectMapper mapper = new ObjectMapper();
 //

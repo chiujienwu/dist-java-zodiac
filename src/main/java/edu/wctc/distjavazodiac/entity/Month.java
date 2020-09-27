@@ -17,9 +17,9 @@ public class Month {
 
     @Id
     @Column(name="num")
-    private int num;
+    private int month;
 
     @Column(name="nm")
-    private String nm;
+    private String name;
 }
 

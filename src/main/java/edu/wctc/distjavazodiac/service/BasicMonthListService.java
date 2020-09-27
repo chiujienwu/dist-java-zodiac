@@ -35,9 +35,9 @@ public class BasicMonthListService implements MonthListService {
 
     @Override
     public List<Month> getMonths() {
-        List<Month> list = new ArrayList<>();
-        monthRepository.findAll().forEach(list::add);
-        return list;
+        List<Month> monthList = new ArrayList<>();
+        monthRepository.findAll().forEach(monthList::add);
+        return monthList;
     }
 
 //    private List<Month> monthList;
