@@ -48,6 +48,8 @@ public class RandomHoroscopeService implements HoroscopeService {
         return hscope;
     }
 
+    // TODO Using the schema, modify the code to get data from database instead of JSOn files
+
     @Autowired
     private FortuneRepository fortuneRepository;
 
